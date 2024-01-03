@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 600px;
+            height: 800px;
+            background-color: darkseagreen;
+            margin: auto;
+            position: relative;
+        }
+        p{
+            font-size: 46px;
+        }
+        .left{
+            position: absolute;
+            top: 46%;
+        }
+        .right{
+            position: absolute;
+            right: 0;
+            top: 46%;
+        }
+        .left:hover{
+            color: green;
+            cursor: pointer;
+        }
+        .right:hover{
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="../html/image/shoes1.jpg" alt="" width="600px" height="800px">
+        <p class="left">&lt;</p>
+        <p class="right">&gt;</p>
+
+    </div>
+</body>
+</html>

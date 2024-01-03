@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* 
+        selector
+        selector_name{
+            attibute:value;
+            attibute:value;
+            attibute:value;
+            attibute:value;
+            attibute:value;
+            attibute:value;
+            attibute:value;
+            attibute:value;
+        }
+
+        types of selector
+        1. element selector
+        => all teh html elements
+        => example: h1, h2, h3, h4, h5, h6,p, div, span, form, table, img
+
+        2. class selector
+        => start with dot(.) symbol
+        => user defined
+
+        3. id selector
+        => start with hash(#)
+        => user defined
+        */
+        
+        h1{
+            color: aqua;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        span{
+            color: yellow;
+        }
+        .container{
+            background-color: aqua;
+            /* overwrite */
+            color: yellow;
+        }
+        p{
+            color: red;
+
+        }
+        .demo{
+            color: violet;
+        }
+        #paragraph{
+            color: #000;
+        }
+        /* priority
+        ID SELECTOR > CLASS SELECTOR > ELEMENT SELECTOR
+        */
+    </style>
+</head>
+<body>
+    <p class="container demo" id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi at, consectetur, corrupti sit voluptatum natus atque saepe minus omnis reiciendis amet temporibus, ipsum blanditiis id incidunt. Delectus accusamus illum debitis!</p>
+    <h1 class="demo" >Heading First</h1>
+</body>
+</html>

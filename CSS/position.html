@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* 
+        top, right, bottom, left
+        types of position
+        1. static
+        2. relative
+        3. absolute
+            a. absolute to parent
+            b. absolute to root/browser
+        4. sticky
+        5. fixed
+        */
+        .container{
+            width: 600px;
+            height: 1300px;
+            background-color: aqua;
+            position: relative;
+            /* position: absolute;
+            right: 100px;
+            bottom: 100px;  */
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        .sticky{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            bottom: 0;
+        }
+        .fixed{
+            width: 700px;
+            height: 200px;
+            background-color: rgb(149, 19, 210);
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">child</div>
+        <div class="fixed">
+            fixed division
+        </div>
+    </div>
+    <div class="sticky">
+        sticky division
+    </div>
+    <div class="container">
+        <div class="child">child</div>
+    </div>
+</body>
+</html>
